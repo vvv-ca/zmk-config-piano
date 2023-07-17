@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: benvallack
-      url-base: https://github.com/benvallack
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: benvallack
-      revision: repeatrollfix-tapdance-macro-mouse-dongle
+      remote: urob
+      revision: main
       import: app/west.yml
   self:
     path: config
