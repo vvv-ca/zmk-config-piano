@@ -171,7 +171,7 @@
 		bindings = <
 				&kp ATSN	&td LA(RBKT) LA(LS(RBKT))	&td  LA(LBKT) LA(LS(LBKT))	&kp LPRN	&kp RPRN 	&kp SEMI 	
 		&kp STAR  	&kp PRCNT	&td QMARK EXCL       		&kp DQT   			&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
-		 		&trans 		&trans  			&trans 	&none &none &trans 		
+		 		&trans 		&trans  			&trans 	&trans 		
 
 		>;
 		};
