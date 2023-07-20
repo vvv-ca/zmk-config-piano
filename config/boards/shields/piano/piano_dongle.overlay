@@ -7,6 +7,10 @@
 #include "piano.dtsi"
 
 / {
+        chosen {
+	        zephyr,display = &oled;
+	};
+
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-direct";
 		label = "KSCAN";
