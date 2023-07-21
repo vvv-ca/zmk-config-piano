@@ -15,6 +15,23 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
+if LVGL
+    
+config LV_Z_VDB_SIZE
+    default 64
+
+config LV_Z_DPI
+    default 148
+
+config LV_Z_BITS_PER_PIXEL
+    default 1
+
+choice LV_COLOR_DEPTH
+    default LV_COLOR_DEPTH_1
+endchoice
+
+endif # LVGL
+
 endif
 
 if SHIELD_PIANO_DONGLE_LEFT || SHIELD_PIANO_DONGLE_RIGHT
