@@ -1,42 +1,25 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
 config ZMK_BLE
-	default y
+    default y
 
 config ZMK_USB
-	default y
+    default y
 
 config ZMK_SPLIT
-	default y
-
+    default y
 
 if SHIELD_PIANO_DONGLE 
 
 config ZMK_KEYBOARD_NAME
-	default "The Piano"
-	
-config ZMK_SPLIT
-	default y
+    default "The Piano"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
+    default y
 
-if LVGL
+endif
 
-config LV_Z_VDB_SIZE
-    default 64
+if SHIELD_PIANO_DONGLE_LEFT || SHIELD_PIANO_DONGLE_RIGHT
 
-config LV_Z_DPI
-    default 148
-
-config LV_Z_BITS_PER_PIXEL
-    default 1
-
-choice LV_COLOR_DEPTH
-    default LV_COLOR_DEPTH_1
-endchoice
-
-endif # LVGL
-
+config ZMK_SLEEP
+    default y
+    
 endif

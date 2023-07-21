@@ -1,11 +1,5 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include "piano.dtsi"
 
 &default_transform {
-	col-offset = <9>;
+    col-offset = <9>;
 };
