@@ -19,3 +19,7 @@ include:
     shield: piano_dongle_left
   - board: nice_nano_v2
     shield: piano_dongle_right
+  - board: nice_nano_v2
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
